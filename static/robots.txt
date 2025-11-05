@@ -1,0 +1,14 @@
+# robots.txt for https://montassar-touati.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://montassar-touati.com/static/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1
+
+# Disallow admin or private areas if any
+# Disallow: /admin/
+# Disallow: /private/

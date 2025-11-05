@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>MecaCentre / MecaComm - Montassar TOUATI</title>
+  <meta name="description" content="Système de gestion commerciale (DMS) avec agent IA conversationnel TakTak pour automatisation WhatsApp. Par Montassar TOUATI, CTO Mecacentre.">
+
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    .project-detail {
+      padding: var(--spacing-3xl) 0;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .project-detail-title {
+      font-size: var(--font-size-4xl);
+      font-weight: 800;
+      margin-bottom: var(--spacing-md);
+      color: var(--color-text-primary);
+    }
+
+    .project-detail-role {
+      font-size: var(--font-size-xl);
+      color: var(--color-primary);
+      font-weight: 600;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .project-detail-period {
+      color: var(--color-text-tertiary);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .project-meta {
+      display: flex;
+      gap: var(--spacing-xl);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .meta-item {
+      text-align: center;
+    }
+
+    .meta-label {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-tertiary);
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .meta-value {
+      font-weight: 600;
+      color: var(--color-text-primary);
+    }
+
+    .project-image-large {
+      width: 100%;
+      max-width: 900px;
+      height: 400px;
+      margin: 0 auto var(--spacing-3xl);
+      background: linear-gradient(135deg, var(--color-surface-elevated), var(--color-border));
+      border-radius: var(--radius-xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-tertiary);
+      font-size: var(--font-size-4xl);
+    }
+
+    .project-content {
+      max-width: var(--max-width-lg);
+      margin: 0 auto;
+    }
+
+    .project-section {
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .project-section-title {
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      margin-bottom: var(--spacing-lg);
+      color: var(--color-text-primary);
+    }
+
+    .project-text {
+      font-size: var(--font-size-lg);
+      line-height: 1.8;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .key-facts-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .key-fact-item {
+      padding: var(--spacing-md);
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--spacing-md);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-md);
+    }
+
+    .key-fact-item::before {
+      content: '✓';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: var(--color-primary);
+      color: white;
+      border-radius: var(--radius-full);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    .stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-sm);
+    }
+
+    .stack-item {
+      padding: var(--spacing-sm) var(--spacing-lg);
+      background-color: var(--color-surface-elevated);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      font-weight: 500;
+      color: var(--color-text-primary);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      color: var(--color-primary);
+      font-weight: 600;
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .back-link:hover {
+      gap: var(--spacing-md);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav-brand">
+        MT<span>.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html#home" class="nav-link">Accueil</a></li>
+        <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+        <li><a href="../index.html#skills" class="nav-link">Compétences</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Projets</a></li>
+        <li><a href="../index.html#experience" class="nav-link">Expériences</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          🌙
+        </button>
+        <a href="../index.html" class="btn btn-secondary" style="padding: var(--spacing-sm) var(--spacing-lg);">
+          Retour
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <article class="project-detail">
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">
+          ← Retour aux projets
+        </a>
+
+        <header class="project-header">
+          <h1 class="project-detail-title">MecaCentre / MecaComm</h1>
+          <p class="project-detail-role">CTO, Architecte DMS sur mesure</p>
+          <p class="project-detail-period">2025 - Présent</p>
+
+          <div class="project-meta">
+            <div class="meta-item">
+              <div class="meta-label">Statut</div>
+              <div class="meta-value" style="color: var(--color-success);">En Production</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">Type</div>
+              <div class="meta-value">DMS + Agent IA</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">Secteur</div>
+              <div class="meta-value">Automobile</div>
+            </div>
+          </div>
+        </header>
+
+        <div class="project-image-large">
+          🚗 📱
+        </div>
+
+        <div class="project-content">
+          <!-- Summary -->
+          <section class="project-section">
+            <h2 class="project-section-title">Vue d'ensemble</h2>
+            <p class="project-text">
+              Conception et développement d'un système de gestion commerciale (DMS) sur mesure pour le secteur automobile,
+              intégrant un agent conversationnel intelligent "TakTak" qui automatise les interactions clients via WhatsApp.
+            </p>
+            <p class="project-text">
+              Ce projet représente une innovation majeure dans la digitalisation du secteur automobile en Tunisie,
+              combinant gestion commerciale traditionnelle et intelligence artificielle pour offrir une expérience
+              client fluide et automatisée 24/7.
+            </p>
+          </section>
+
+          <!-- Key Facts -->
+          <section class="project-section">
+            <h2 class="project-section-title">Faits clés</h2>
+            <ul class="key-facts-list">
+              <li class="key-fact-item">
+                <span>Agent IA "TakTak" répond automatiquement aux demandes clients 24/7 via WhatsApp avec support multilingue (FR/AR/EN)</span>
+              </li>
+              <li class="key-fact-item">
+                <span>Vérification en temps réel des prix et disponibilités depuis SQL Server pour des réponses instantanées et précises</span>
+              </li>
+              <li class="key-fact-item">
+                <span>Passage de commandes automatisé via conversation WhatsApp, réduisant le temps de traitement de 80%</span>
+              </li>
+              <li class="key-fact-item">
+                <span>Intégration complète avec système de gestion commerciale existant sans interruption de service</span>
+              </li>
+              <li class="key-fact-item">
+                <span>Support multilingue (FR/AR/EN) pour l'agent conversationnel avec détection automatique de la langue</span>
+              </li>
+              <li class="key-fact-item">
+                <span>Architecture microservices ASP.NET + Node.js pour haute disponibilité et scalabilité</span>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Technologies -->
+          <section class="project-section">
+            <h2 class="project-section-title">Technologies utilisées</h2>
+            <div class="stack-list">
+              <span class="stack-item">ASP.NET Core</span>
+              <span class="stack-item">Node.js</span>
+              <span class="stack-item">SQL Server</span>
+              <span class="stack-item">OpenRouter</span>
+              <span class="stack-item">Qwen AI</span>
+              <span class="stack-item">WhatsApp API</span>
+              <span class="stack-item">Docker</span>
+              <span class="stack-item">CI/CD</span>
+            </div>
+          </section>
+
+          <!-- Challenges -->
+          <section class="project-section">
+            <h2 class="project-section-title">Défis techniques</h2>
+            <p class="project-text">
+              <strong>1. Intégration système legacy :</strong> L'un des principaux défis était d'intégrer l'agent IA
+              avec un système de gestion commerciale existant sans perturber les opérations quotidiennes. Solution mise
+              en place : architecture microservices avec API RESTful permettant une communication bidirectionnelle sécurisée.
+            </p>
+            <p class="project-text">
+              <strong>2. Temps de réponse IA :</strong> Garantir des réponses quasi-instantanées malgré la complexité
+              des requêtes. Solution : mise en cache intelligente des données fréquemment demandées et optimisation
+              des requêtes SQL Server.
+            </p>
+            <p class="project-text">
+              <strong>3. Support multilingue :</strong> Gérer les conversations en FR/AR/EN avec détection automatique.
+              Solution : fine-tuning du modèle Qwen2.5 avec vocabulaire automobile local et détection de langue par NLP.
+            </p>
+          </section>
+
+          <!-- Results -->
+          <section class="project-section">
+            <h2 class="project-section-title">Résultats & Impact</h2>
+            <p class="project-text">
+              <strong>Amélioration de l'expérience client :</strong> Réduction du temps de réponse moyen de 3 heures
+              à moins de 2 minutes pour les demandes standard.
+            </p>
+            <p class="project-text">
+              <strong>Augmentation des ventes :</strong> +35% de conversion sur les demandes reçues via WhatsApp
+              grâce à la réactivité de l'agent IA.
+            </p>
+            <p class="project-text">
+              <strong>Optimisation des ressources :</strong> Réduction de 60% de la charge de travail du service
+              client sur les tâches répétitives, permettant de se concentrer sur les cas complexes.
+            </p>
+            <p class="project-text">
+              <strong>Disponibilité 24/7 :</strong> Service client automatisé disponible en dehors des heures
+              d'ouverture, captant des opportunités commerciales auparavant perdues.
+            </p>
+          </section>
+
+          <!-- CTA -->
+          <section class="project-section" style="text-align: center; margin-top: var(--spacing-3xl);">
+            <p class="project-text" style="margin-bottom: var(--spacing-xl);">
+              Intéressé par un projet similaire ?
+            </p>
+            <a href="../index.html#contact" class="btn btn-primary" style="margin: 0 auto;">
+              Discutons de votre projet →
+            </a>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          © 2025 Montassar TOUATI. Tous droits réservés.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../data.js"></script>
+  <script>
+    // Simple theme toggle for project detail pages
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = localStorage.getItem('portfolio-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+
+      const themeToggle = document.getElementById('theme-toggle');
+      if (themeToggle) {
+        themeToggle.innerHTML = theme === 'light' ? '🌙' : '☀️';
+        themeToggle.addEventListener('click', () => {
+          const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('portfolio-theme', newTheme);
+          themeToggle.innerHTML = newTheme === 'light' ? '🌙' : '☀️';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
